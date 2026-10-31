@@ -45,6 +45,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -74,7 +75,8 @@ import kotlinx.coroutines.launch
 @Composable
 fun ChallengeScreen(vm: AppViewModel, id: Int, onBack: () -> Unit, onChallenge: (Int) -> Unit) {
     val api = remember { vm.api() }
-    val summary = vm.board.value.challenges.firstOrNull { it.id == id }
+    val board by vm.board.collectAsState()
+    val summary = board.challenges.firstOrNull { it.id == id }
     var detail by remember { mutableStateOf<ChallengeDetail?>(null) }
     var error by remember { mutableStateOf<String?>(null) }
     var reload by remember { mutableStateOf(0) }
