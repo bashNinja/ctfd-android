@@ -1,9 +1,10 @@
 name: test
 
+# Only code merged to main runs, and only on our own runner: pull requests from a public
+# repo would run strangers' code there, and there are no hosted minutes to spend.
 on:
   push:
     branches: [main]
-  pull_request:
 
 permissions:
   contents: read

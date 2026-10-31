@@ -16,6 +16,9 @@ concurrency:
 jobs:
   release:
     runs-on: [self-hosted, Linux, X64]
+    # The signing keys are secrets of this environment, which only v* tags may use;
+    # a ruleset lets only repository admins create, move or delete those tags.
+    environment: release
     steps:
       - uses: actions/checkout@v5
         with:

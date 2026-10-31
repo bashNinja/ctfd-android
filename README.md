@@ -79,7 +79,7 @@ official F-Droid submission.
 
 ## CI
 
-`test` (every push to `main` and every pull request) runs the unit tests and builds the
+`test` (every push to `main`; pull requests run nothing until they're merged) runs the unit tests and builds the
 debug and release APKs and lint, on the self-hosted runner (`runs-on: [self-hosted, Linux, X64]`).
 The job gets its own `HOME`; the Android SDK and Gradle caches live under
 `$RUNNER_TOOL_CACHE` so they download once. The runner instance for this repository is

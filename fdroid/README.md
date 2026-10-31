@@ -17,7 +17,9 @@ Dry run against a local checkout:
     PAGES_DIR=/tmp/pages NO_PUSH=1 FDROID_KEYSTORE_B64=... FDROID_KEYSTORE_PASSWORD=... \
       fdroid/publish.sh app/build/outputs/apk/release/app-release.apk
 
-Repository secrets and variables the workflow uses:
+Secrets of the `release` environment (which only `v*` tags can deploy to; the "Release
+tags" ruleset lets only repository admins create, move or delete those tags), and the
+repository variable the workflow uses:
 
 | Name | Kind | What |
 | --- | --- | --- |
@@ -27,7 +29,8 @@ Repository secrets and variables the workflow uses:
 | `FDROID_KEYSTORE_PASSWORD` | secret | its store and key password |
 | `RELEASE_CERT_SHA256` | variable | the APK certificate's SHA-256, checked before publishing |
 
-Both keystores are kept in `~/.config/ctfd-android/`. Losing the release key means
+Both keystores are kept in `~/.config/ctfd-android/`, with a backup in Bitwarden (the
+"ctfd-android signing keys" item: both `.jks` files attached, passwords in its fields). Losing the release key means
 installed copies can't be updated; losing the repo key means everyone re-adds the repo.
 
 ## The official F-Droid repo
