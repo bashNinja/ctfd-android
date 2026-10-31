@@ -1,0 +1,12 @@
+# Listing metadata for the F-Droid repo this project publishes on GitHub Pages.
+# The descriptions, icon and screenshots come from fastlane/metadata/android.
+Categories:
+  - Security
+  - Science & Education
+License: BSD-3-Clause
+AuthorName: Mike Weaver
+WebSite: https://github.com/miketweaver/ctfd-android
+SourceCode: https://github.com/miketweaver/ctfd-android
+IssueTracker: https://github.com/miketweaver/ctfd-android/issues
+Changelog: https://github.com/miketweaver/ctfd-android/releases
+AutoName: CTFd

@@ -1,0 +1,33 @@
+Categories:
+  - Science & Education
+  - Security
+License: BSD-3-Clause
+AuthorName: Mike Weaver
+SourceCode: https://github.com/miketweaver/ctfd-android
+IssueTracker: https://github.com/miketweaver/ctfd-android/issues
+Changelog: https://github.com/miketweaver/ctfd-android/releases
+
+AutoName: CTFd
+
+RepoType: git
+Repo: https://github.com/miketweaver/ctfd-android.git
+Binaries: https://github.com/miketweaver/ctfd-android/releases/download/v%v/ctfd-android-v%v.apk
+
+Builds:
+  - versionName: 0.1.0
+    versionCode: 1
+    commit: v0.1.0
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-21-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+AllowedAPKSigningKeys: 56dd8d103674ffa37d24aff72392f98195afa0b6a3eaa54ee14568d64c1103a3
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags ^v[0-9.]+$
+CurrentVersion: 0.1.0
+CurrentVersionCode: 1

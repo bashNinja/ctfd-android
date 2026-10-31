@@ -1,0 +1,72 @@
+name: release
+
+# Push a tag like v0.2.0 (matching versionName) to build a signed APK, attach it to a
+# GitHub release and publish it to the F-Droid repo on GitHub Pages.
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: [self-hosted, Linux, X64]
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      - uses: ./.github/actions/android
+
+      - name: Check the tag matches versionName
+        run: |
+          version=$(sed -n 's/.*versionName = "\(.*\)"/\1/p' app/build.gradle.kts)
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::tag $GITHUB_REF_NAME but versionName is $version"; exit 1
+          fi
+
+      - name: Write the signing key
+        env:
+          KEYSTORE_B64: ${{ secrets.RELEASE_KEYSTORE_B64 }}
+          STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+        run: |
+          umask 077
+          echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/release.jks"
+          printf 'storeFile=%s\nstorePassword=%s\nkeyAlias=ctfd\nkeyPassword=%s\n' \
+            "$RUNNER_TEMP/release.jks" "$STORE_PASSWORD" "$KEY_PASSWORD" > "$RUNNER_TEMP/keystore.properties"
+          echo "CTFD_KEYSTORE_PROPERTIES=$RUNNER_TEMP/keystore.properties" >> "$GITHUB_ENV"
+
+      - run: ./gradlew --no-daemon testDebugUnitTest assembleRelease
+
+      - name: Check the APK is signed with the release key
+        run: |
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --print-certs app/build/outputs/apk/release/app-release.apk \
+            | grep -q "SHA-256 digest: ${{ vars.RELEASE_CERT_SHA256 }}"
+
+      - name: Create the GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          apk="ctfd-android-$GITHUB_REF_NAME.apk"
+          cp app/build/outputs/apk/release/app-release.apk "$RUNNER_TEMP/$apk"
+          code=$(sed -n 's/.*versionCode = \(.*\)/\1/p' app/build.gradle.kts)
+          notes=fastlane/metadata/android/en-US/changelogs/$code.txt
+          gh release create "$GITHUB_REF_NAME" "$RUNNER_TEMP/$apk" --repo "$GITHUB_REPOSITORY" \
+            --title "$GITHUB_REF_NAME" --notes-file "$notes"
+
+      - name: Update the F-Droid repo
+        env:
+          FDROID_KEYSTORE_B64: ${{ secrets.FDROID_KEYSTORE_B64 }}
+          FDROID_KEYSTORE_PASSWORD: ${{ secrets.FDROID_KEYSTORE_PASSWORD }}
+          GH_TOKEN: ${{ github.token }}
+        run: fdroid/publish.sh app/build/outputs/apk/release/app-release.apk
+
+      - name: Remove the keys
+        if: always()
+        run: rm -f "$RUNNER_TEMP/release.jks" "$RUNNER_TEMP/keystore.properties" "$RUNNER_TEMP/fdroid-repo.jks"
