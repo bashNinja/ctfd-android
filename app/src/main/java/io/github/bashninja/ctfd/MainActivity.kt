@@ -1,4 +1,4 @@
-package io.github.miketweaver.ctfd
+package io.github.bashninja.ctfd
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,12 +13,12 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import io.github.miketweaver.ctfd.ui.AccountScreen
-import io.github.miketweaver.ctfd.ui.AddCtfScreen
-import io.github.miketweaver.ctfd.ui.AppViewModel
-import io.github.miketweaver.ctfd.ui.ChallengeScreen
-import io.github.miketweaver.ctfd.ui.CtfdTheme
-import io.github.miketweaver.ctfd.ui.HomeScreen
+import io.github.bashninja.ctfd.ui.AccountScreen
+import io.github.bashninja.ctfd.ui.AddCtfScreen
+import io.github.bashninja.ctfd.ui.AppViewModel
+import io.github.bashninja.ctfd.ui.ChallengeScreen
+import io.github.bashninja.ctfd.ui.CtfdTheme
+import io.github.bashninja.ctfd.ui.HomeScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

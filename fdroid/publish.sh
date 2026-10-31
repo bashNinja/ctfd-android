@@ -8,10 +8,10 @@ set -euo pipefail
 
 apk=$(realpath "$1")
 src=$(cd "$(dirname "$0")/.." && pwd)
-app=io.github.miketweaver.ctfd
+app=io.github.bashninja.ctfd
 work=${RUNNER_TEMP:-$(mktemp -d)}
 pages=${PAGES_DIR:-$work/pages}
-remote="https://github.com/${GITHUB_REPOSITORY:-miketweaver/ctfd-android}.git"
+remote="https://github.com/${GITHUB_REPOSITORY:-bashNinja/ctfd-android}.git"
 
 if [ ! -d "$pages/.git" ]; then
   if git ls-remote --exit-code --heads "$remote" gh-pages >/dev/null; then
@@ -33,11 +33,11 @@ umask 022
 
 cd "$pages"
 cat > config.yml <<CONFIG
-repo_url: https://miketweaver.github.io/ctfd-android/repo
+repo_url: https://bashninja.github.io/ctfd-android/repo
 repo_name: CTFd for Android
 repo_description: >-
   Builds of CTFd for Android, signed by its author and published from
-  https://github.com/miketweaver/ctfd-android on each release.
+  https://github.com/bashNinja/ctfd-android on each release.
 repo_icon: icon.png
 archive_older: 0
 sdk_path: ${ANDROID_HOME:-$HOME/Android/Sdk}

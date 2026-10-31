@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "io.github.miketweaver.ctfd"
+    namespace = "io.github.bashninja.ctfd"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "io.github.miketweaver.ctfd"
+        applicationId = "io.github.bashninja.ctfd"
         minSdk = 29
         targetSdk = 36
         versionCode = 1

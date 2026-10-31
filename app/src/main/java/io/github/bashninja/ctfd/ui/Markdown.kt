@@ -1,4 +1,4 @@
-package io.github.miketweaver.ctfd.ui
+package io.github.bashninja.ctfd.ui
 
 import android.content.ClipData
 import androidx.compose.foundation.background
@@ -47,7 +47,7 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.text.HtmlCompat
-import io.github.miketweaver.ctfd.data.CtfdApi
+import io.github.bashninja.ctfd.data.CtfdApi
 import kotlinx.coroutines.launch
 import org.commonmark.ext.gfm.tables.TableBlock
 import org.commonmark.ext.gfm.tables.TableCell

@@ -1,4 +1,4 @@
-package io.github.miketweaver.ctfd.ui
+package io.github.bashninja.ctfd.ui
 
 import android.content.ClipData
 import android.widget.Toast
@@ -63,11 +63,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import io.github.miketweaver.ctfd.data.AttemptResult
-import io.github.miketweaver.ctfd.data.ChallengeDetail
-import io.github.miketweaver.ctfd.data.CtfdApi
-import io.github.miketweaver.ctfd.data.CtfdException
-import io.github.miketweaver.ctfd.data.Hint
+import io.github.bashninja.ctfd.data.AttemptResult
+import io.github.bashninja.ctfd.data.ChallengeDetail
+import io.github.bashninja.ctfd.data.CtfdApi
+import io.github.bashninja.ctfd.data.CtfdException
+import io.github.bashninja.ctfd.data.Hint
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)

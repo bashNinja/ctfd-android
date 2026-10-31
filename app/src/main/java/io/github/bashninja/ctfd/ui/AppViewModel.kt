@@ -1,14 +1,14 @@
-package io.github.miketweaver.ctfd.ui
+package io.github.bashninja.ctfd.ui
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import io.github.miketweaver.ctfd.data.AccountStore
-import io.github.miketweaver.ctfd.data.ChallengeSummary
-import io.github.miketweaver.ctfd.data.CtfdApi
-import io.github.miketweaver.ctfd.data.CtfdException
-import io.github.miketweaver.ctfd.data.Standing
-import io.github.miketweaver.ctfd.data.Status
+import io.github.bashninja.ctfd.data.AccountStore
+import io.github.bashninja.ctfd.data.ChallengeSummary
+import io.github.bashninja.ctfd.data.CtfdApi
+import io.github.bashninja.ctfd.data.CtfdException
+import io.github.bashninja.ctfd.data.Standing
+import io.github.bashninja.ctfd.data.Status
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.async
 import kotlinx.coroutines.flow.MutableStateFlow

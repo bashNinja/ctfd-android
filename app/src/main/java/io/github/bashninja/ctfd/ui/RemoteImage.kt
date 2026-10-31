@@ -1,4 +1,4 @@
-package io.github.miketweaver.ctfd.ui
+package io.github.bashninja.ctfd.ui
 
 import android.graphics.Bitmap
 import android.graphics.ImageDecoder
@@ -41,7 +41,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import com.caverock.androidsvg.SVG
-import io.github.miketweaver.ctfd.data.CtfdApi
+import io.github.bashninja.ctfd.data.CtfdApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.nio.ByteBuffer

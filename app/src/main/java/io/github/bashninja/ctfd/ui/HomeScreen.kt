@@ -1,4 +1,4 @@
-package io.github.miketweaver.ctfd.ui
+package io.github.bashninja.ctfd.ui
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.background
@@ -78,9 +78,9 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import io.github.miketweaver.ctfd.data.ChallengeSummary
-import io.github.miketweaver.ctfd.data.Standing
-import io.github.miketweaver.ctfd.data.Status
+import io.github.bashninja.ctfd.data.ChallengeSummary
+import io.github.bashninja.ctfd.data.Standing
+import io.github.bashninja.ctfd.data.Status
 import kotlinx.coroutines.launch
 
 private enum class Tab(val label: String) { Challenges("Challenges"), Scoreboard("Scoreboard") }

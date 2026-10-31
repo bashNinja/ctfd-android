@@ -10,8 +10,8 @@ API with a personal access token.
 
 - **F-Droid**: add this repo in the F-Droid app (Settings › Repositories, or open the
   link on the phone), then install *CTFd for Android*:
-  `https://miketweaver.github.io/ctfd-android/repo?fingerprint=8F92EBDAB6B36391908F27135D4C991E2C2DB1200A1910155C157698ADEB70F3`
-- **APK**: download it from [Releases](https://github.com/miketweaver/ctfd-android/releases).
+  `https://bashninja.github.io/ctfd-android/repo?fingerprint=8F92EBDAB6B36391908F27135D4C991E2C2DB1200A1910155C157698ADEB70F3`
+- **APK**: download it from [Releases](https://github.com/bashNinja/ctfd-android/releases).
 
 Both are signed with the same key, so either one updates the other.
 

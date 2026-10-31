@@ -1,4 +1,4 @@
-package io.github.miketweaver.ctfd.data
+package io.github.bashninja.ctfd.data
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

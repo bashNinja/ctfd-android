@@ -8,9 +8,9 @@ Each `v*` tag runs `.github/workflows/release.yml`, which builds the APK, signs 
 release key, attaches it to a GitHub release and runs `publish.sh` to add it to the F-Droid
 repo on the `gh-pages` branch:
 
-    https://miketweaver.github.io/ctfd-android/repo?fingerprint=8F92EBDAB6B36391908F27135D4C991E2C2DB1200A1910155C157698ADEB70F3
+    https://bashninja.github.io/ctfd-android/repo?fingerprint=8F92EBDAB6B36391908F27135D4C991E2C2DB1200A1910155C157698ADEB70F3
 
-`publish.sh` takes the listing from `metadata/io.github.miketweaver.ctfd.yml` and
+`publish.sh` takes the listing from `metadata/io.github.bashninja.ctfd.yml` and
 `fastlane/metadata/android/`, and signs the index with the repo key (not the APK key).
 Dry run against a local checkout:
 
@@ -32,10 +32,10 @@ installed copies can't be updated; losing the repo key means everyone re-adds th
 
 ## The official F-Droid repo
 
-`fdroiddata/io.github.miketweaver.ctfd.yml` is the build recipe for
+`fdroiddata/io.github.bashninja.ctfd.yml` is the build recipe for
 [fdroiddata](https://gitlab.com/fdroid/fdroiddata), in `fdroid rewritemeta` format and
 clean under `fdroid lint`. To submit: fork fdroiddata, copy it to `metadata/`, run
-`fdroid build -v -l io.github.miketweaver.ctfd` if you can, and open a merge request.
+`fdroid build -v -l io.github.bashninja.ctfd` if you can, and open a merge request.
 
 The recipe asks for a reproducible build (`Binaries` and `AllowedAPKSigningKeys`): when
 F-Droid's build matches the GitHub release, it ships the APK signed with this project's

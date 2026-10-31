@@ -1,4 +1,4 @@
-package io.github.miketweaver.ctfd.ui
+package io.github.bashninja.ctfd.ui
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse

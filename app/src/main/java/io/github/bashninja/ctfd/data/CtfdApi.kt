@@ -1,4 +1,4 @@
-package io.github.miketweaver.ctfd.data
+package io.github.bashninja.ctfd.data
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

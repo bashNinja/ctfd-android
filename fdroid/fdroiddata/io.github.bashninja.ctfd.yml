@@ -2,16 +2,16 @@ Categories:
   - Science & Education
   - Security
 License: BSD-3-Clause
-AuthorName: Mike Weaver
-SourceCode: https://github.com/miketweaver/ctfd-android
-IssueTracker: https://github.com/miketweaver/ctfd-android/issues
-Changelog: https://github.com/miketweaver/ctfd-android/releases
+AuthorName: bashNinja
+SourceCode: https://github.com/bashNinja/ctfd-android
+IssueTracker: https://github.com/bashNinja/ctfd-android/issues
+Changelog: https://github.com/bashNinja/ctfd-android/releases
 
 AutoName: CTFd
 
 RepoType: git
-Repo: https://github.com/miketweaver/ctfd-android.git
-Binaries: https://github.com/miketweaver/ctfd-android/releases/download/v%v/ctfd-android-v%v.apk
+Repo: https://github.com/bashNinja/ctfd-android.git
+Binaries: https://github.com/bashNinja/ctfd-android/releases/download/v%v/ctfd-android-v%v.apk
 
 Builds:
   - versionName: 0.1.0

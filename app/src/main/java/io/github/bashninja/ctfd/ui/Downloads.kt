@@ -1,10 +1,10 @@
-package io.github.miketweaver.ctfd.ui
+package io.github.bashninja.ctfd.ui
 
 import android.app.DownloadManager
 import android.content.Context
 import android.net.Uri
 import android.os.Environment
-import io.github.miketweaver.ctfd.data.CtfdApi
+import io.github.bashninja.ctfd.data.CtfdApi
 
 /** The file name in a CTFd file URL such as /files/ab12/evidence.zip?token=... */
 fun fileName(path: String): String =
