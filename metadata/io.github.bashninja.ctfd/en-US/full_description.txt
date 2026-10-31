@@ -1,0 +1,16 @@
+Play a <a href="https://ctfd.io">CTFd</a> capture-the-flag competition from your phone. Sign in to any CTFd instance with a personal access token and you get:
+
+<ul>
+<li><b>Your standing</b>: place, score, solved count and how far you are from the leader.</li>
+<li><b>The challenge board</b>, grouped by category, with search, solved filters and a jump-to-category sheet. A "Try next" card suggests the most-solved challenge you haven't done.</li>
+<li><b>Challenge descriptions</b> rendered from Markdown: code blocks, lists, tables, links and images (tap to zoom). Connection info has copy and open buttons.</li>
+<li><b>Files</b> saved to Downloads/ctfd/&lt;ctf&gt;/&lt;challenge&gt;/.</li>
+<li><b>Hints</b>, with the cost confirmed before you unlock one.</li>
+<li><b>Flag submission</b>: one attempt per tap, never retried, with attempt limits shown.</li>
+<li><b>The scoreboard</b>, with your own row pinned, and every player's or team's solves.</li>
+<li>Several CTFs at once, switched from the title bar. Light and dark themes follow the system.</li>
+</ul>
+
+Tokens are encrypted with a key kept in the Android Keystore and app data is excluded from backups. The token is only ever sent to the CTF's own host. Only https is allowed.
+
+This app is not affiliated with CTFd LLC.

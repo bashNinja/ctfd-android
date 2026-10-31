@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fdroid>
+	<repo icon="icon.png" name="CTFd for Android" pubkey="5b302e303033735d5b7761726e696e675d5b6f732c636f6e7461696e65725d204367726f7570206d656d6f727920636f6e74726f6c6c6572207061746820617420272f7379732f66732f6367726f757027207365656d7320746f2068617665206d6f76656420746f20272f2e2e2f2e2e2f2e2e2f6170702e736c6963652f6170702d6f7263612d31333531302e73636f7065272c206465746563746564206c696d69747320776f6e27742062652061636375726174650a5b302e303033735d5b7761726e696e675d5b6f732c636f6e7461696e65725d204367726f75702063707520636f6e74726f6c6c6572207061746820617420272f7379732f66732f6367726f757027207365656d7320746f2068617665206d6f76656420746f20272f2e2e2f2e2e2f2e2e2f6170702e736c6963652f6170702d6f7263612d31333531302e73636f7065272c206465746563746564206c696d69747320776f6e27742062652061636375726174650a3082051c30820304a003020102020900c5fd13df9c4d998f300d06092a864886f70d01010c0500303b3111300f060355040a1308383031204c616273312630240603550403131d4354466420666f7220416e64726f696420462d44726f6964207265706f3020170d3236313033313137313431305a180f32303534303331383137313431305a303b3111300f060355040a1308383031204c616273312630240603550403131d4354466420666f7220416e64726f696420462d44726f6964207265706f30820222300d06092a864886f70d01010105000382020f003082020a0282020100d564b33ff54c36ba243cbe05243de9034dcac0f9ac71ddc272fb5a3c42db6da51595acd91730f0c6cc66f893e7c82a2258fa6554a35b18ea0ec7d4f4499e0e8d8893d69b4234425f9a0fd61f98d1e80f3fa0a5990a2e89712ff947da67d9007015dffd17c2248151a5634724c61b6665c70c8405f24d00a9c566e127ad1c227d60fb0621e7fd3c76695415c278891a05eb49c3051fc881ab64e62145d817ad8ccba20818b57baeb77233cab41de636e10ed8b4cef3f3c2224cf255273db9d9769b40e5bc1be114ce817af82e04f685d7c7fe9a08e41b3ee17b59c1c44fa77ab2d0ff237443ffe087b9809f8d00cce63b9ad1d5cf7ba5577bfb73b14489b805f5ec4fd622bf29457fe5ea29f10ec9bb2df32468976d5f9b8055c4566e33eb417568a876ce5cde20132944f65c5fc2fbf42e954dd1a2f8708bccca806f9d8057187ccb2867839592db17c9bd5b535ddb3b1475d286d70e8adc25f5d8959cfaf03673f282d9c8061add9be5b3a0f35d9a8572a2447f3788bed783175c33ff46b74b77f1c63b8e06d6486cf511a86df039ce8c474a31041d5d2a54a4cfcf98d9fe6d54b93a1138e399f2318d02eb842ec9d4dc5bd2f4b04e335d99ee023200283e7aaca5942039e3cea8c5f6f64115598101564ad58d450269b6b411579474c47df5f2aa7144d6fbfd94c9351d9cbe9736a5fdb6a67dac03a84f82237f32f1b571b90203010001a321301f301d0603551d0e04160414d3602aa1cbca912dbe1d721a96130316e9f3e9d3300d06092a864886f70d01010c05000382020100559ac2d6565a7dc14ac8dc6b52ce8dcef2f97d6d2584d633d827c0fa4d26fe6b50ae8bf2a5fb04133b8bdb8f0c27271c4983684fcc3b52f81fb2ef9775e0148b40796464fae0a7ec228875b9ba6084c674038a3819c89f1f2a5a6be26415ba58e7bac2400b887f97baeb1b38d656a1691deeac27d589312a963db59d463af1b4dd0ccca5d0ff5a018d659af256a22d3edab03a79d9dae712c824ae76cdc98836907f61200dfc4cfdfd49b445ad79e9f7caf3db7542e3daae74b5eaa8bfb60b11a0a6202206c4d13aebf72a86ba3169ed32cca1e6a36c71106f0ca4d944cc7dc83b1d5114841d5baa624a379a5fcd05622e9182855122a9dbc8ad9f2b62754ccd6f613d1d6a8a6e7483fa3407a00c584c816a809dc9af5f3ecaf8956884c520947de02f49f2185fd61a07dbb9262bcd0e8b1c5298b0a75672714d4e722b743d2cf1c5d69851486e7781da37e2c8b89b4d0314093e74bcaedbee54c3a128f934eb36dae9d65bf2802ff191cb3cb8d4cc75e5f3c55bbb41101e07976c07b8af02dd47458764d8952281a4e344f160e51677e62dd1107404822efbc8b86ffe5cc3c31c5347acc8abaae29ab797fb0de4322a309efc94a64478f6bc4ddb936db32ee259ed64794dd483223faeb6770bddf597f16656044abbc53f4577f4e402c2e2c2c8a96a40990ab268825795a5767c2941ccafaa83f2b5ac3f39b719605ffa2831" timestamp="1793468602" url="https://bashninja.github.io/ctfd-android/repo" version="20002">
+		<description>Builds of CTFd for Android, signed by its author and published from https://github.com/bashNinja/ctfd-android on each release.</description>
+	</repo>
+	<application id="io.github.bashninja.ctfd">
+		<id>io.github.bashninja.ctfd</id>
+		<added>2026-10-31</added>
+		<lastupdated>2026-10-31</lastupdated>
+		<name>CTFd for Android</name>
+		<summary>Play CTFd capture-the-flag competitions from your phone</summary>
+		<desc>Play a &lt;a href=&quot;https://ctfd.io&quot;&gt;CTFd&lt;/a&gt; capture-the-flag competition from your phone. Sign in to any CTFd instance with a personal access token and you get:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Your standing&lt;/b&gt;: place, score, solved count and how far you are from the leader.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;The challenge board&lt;/b&gt;, grouped by category, with search, solved filters and a jump-to-category sheet. A &quot;Try next&quot; card suggests the most-solved challenge you haven't done.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Challenge descriptions&lt;/b&gt; rendered from Markdown: code blocks, lists, tables, links and images (tap to zoom). Connection info has copy and open buttons.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Files&lt;/b&gt; saved to Downloads/ctfd/&amp;lt;ctf&amp;gt;/&amp;lt;challenge&amp;gt;/.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Hints&lt;/b&gt;, with the cost confirmed before you unlock one.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Flag submission&lt;/b&gt;: one attempt per tap, never retried, with attempt limits shown.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;The scoreboard&lt;/b&gt;, with your own row pinned, and every player's or team's solves.&lt;/li&gt;
+&lt;li&gt;Several CTFs at once, switched from the title bar. Light and dark themes follow the system.&lt;/li&gt;
+&lt;/ul&gt;
+
+Tokens are encrypted with a key kept in the Android Keystore and app data is excluded from backups. The token is only ever sent to the CTF's own host. Only https is allowed.
+
+This app is not affiliated with CTFd LLC.
+</desc>
+		<license>BSD-3-Clause</license>
+		<categories>Security,Science &amp; Education</categories>
+		<category>Security</category>
+		<web>https://github.com/bashNinja/ctfd-android</web>
+		<source>https://github.com/bashNinja/ctfd-android</source>
+		<tracker>https://github.com/bashNinja/ctfd-android/issues</tracker>
+		<changelog>https://github.com/bashNinja/ctfd-android/releases</changelog>
+		<author>bashNinja</author>
+		<marketversion></marketversion>
+		<marketvercode>1</marketvercode>
+		<package>
+			<version>0.1.0</version>
+			<versioncode>1</versioncode>
+			<apkname>io.github.bashninja.ctfd_1.apk</apkname>
+			<hash type="sha256">9f67792266c578bb996823c4a4c552749f439d071d6b174a29000946374a146d</hash>
+			<size>3265010</size>
+			<sdkver>29</sdkver>
+			<targetSdkVersion>36</targetSdkVersion>
+			<added>2026-10-31</added>
+			<sig>6fbe65964f1c0b530522670838dcc6a1</sig>
+			<permissions>INTERNET,io.github.bashninja.ctfd.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
+			<nativecode>arm64-v8a,armeabi-v7a,x86,x86_64</nativecode>
+		</package>
+	</application>
+</fdroid>

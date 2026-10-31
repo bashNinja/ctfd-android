@@ -1,0 +1,80 @@
+{
+  "repo": {
+    "timestamp": 1793468602000,
+    "version": 20002,
+    "name": "CTFd for Android",
+    "icon": "icon.png",
+    "address": "https://bashninja.github.io/ctfd-android/repo",
+    "description": "Builds of CTFd for Android, signed by its author and published from https://github.com/bashNinja/ctfd-android on each release."
+  },
+  "requests": {
+    "install": [],
+    "uninstall": []
+  },
+  "apps": [
+    {
+      "authorName": "bashNinja",
+      "categories": [
+        "Security",
+        "Science & Education"
+      ],
+      "changelog": "https://github.com/bashNinja/ctfd-android/releases",
+      "suggestedVersionCode": "1",
+      "issueTracker": "https://github.com/bashNinja/ctfd-android/issues",
+      "license": "BSD-3-Clause",
+      "sourceCode": "https://github.com/bashNinja/ctfd-android",
+      "webSite": "https://github.com/bashNinja/ctfd-android",
+      "added": 1793468601000,
+      "packageName": "io.github.bashninja.ctfd",
+      "lastUpdated": 1793468601000,
+      "localized": {
+        "en-US": {
+          "description": "Play a <a href=\"https://ctfd.io\">CTFd</a> capture-the-flag competition from your phone. Sign in to any CTFd instance with a personal access token and you get:\n\n<ul>\n<li><b>Your standing</b>: place, score, solved count and how far you are from the leader.</li>\n<li><b>The challenge board</b>, grouped by category, with search, solved filters and a jump-to-category sheet. A \"Try next\" card suggests the most-solved challenge you haven't done.</li>\n<li><b>Challenge descriptions</b> rendered from Markdown: code blocks, lists, tables, links and images (tap to zoom). Connection info has copy and open buttons.</li>\n<li><b>Files</b> saved to Downloads/ctfd/&lt;ctf&gt;/&lt;challenge&gt;/.</li>\n<li><b>Hints</b>, with the cost confirmed before you unlock one.</li>\n<li><b>Flag submission</b>: one attempt per tap, never retried, with attempt limits shown.</li>\n<li><b>The scoreboard</b>, with your own row pinned, and every player's or team's solves.</li>\n<li>Several CTFs at once, switched from the title bar. Light and dark themes follow the system.</li>\n</ul>\n\nTokens are encrypted with a key kept in the Android Keystore and app data is excluded from backups. The token is only ever sent to the CTF's own host. Only https is allowed.\n\nThis app is not affiliated with CTFd LLC.\n",
+          "icon": "icon_GNglFqdNY-2e-mzyHv9-VzZZeoz1JiW2YMarelv5Ol4=.png",
+          "name": "CTFd for Android",
+          "phoneScreenshots": [
+            "1.png",
+            "2.png",
+            "3.png"
+          ],
+          "summary": "Play CTFd capture-the-flag competitions from your phone",
+          "whatsNew": "First release: challenge board with categories, Markdown descriptions with images, files, hints, flag submission, scoreboard, light and dark themes.\n"
+        }
+      }
+    }
+  ],
+  "packages": {
+    "io.github.bashninja.ctfd": [
+      {
+        "added": 1793468601000,
+        "apkName": "io.github.bashninja.ctfd_1.apk",
+        "hash": "9f67792266c578bb996823c4a4c552749f439d071d6b174a29000946374a146d",
+        "hashType": "sha256",
+        "minSdkVersion": 29,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi-v7a",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "io.github.bashninja.ctfd",
+        "sig": "6fbe65964f1c0b530522670838dcc6a1",
+        "signer": "56dd8d103674ffa37d24aff72392f98195afa0b6a3eaa54ee14568d64c1103a3",
+        "size": 3265010,
+        "targetSdkVersion": 36,
+        "uses-permission": [
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "io.github.bashninja.ctfd.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 1,
+        "versionName": "0.1.0"
+      }
+    ]
+  }
+}

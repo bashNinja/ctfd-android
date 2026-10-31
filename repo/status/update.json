@@ -1,0 +1,55 @@
+{
+  "/etc/issue.net": "Ubuntu 26.04.1 LTS",
+  "antiFeatures": {},
+  "apksigner": "/usr/bin/apksigner",
+  "archivePolicy0": [],
+  "commandLine": [
+    "/tmp/claude-1000/-home-bashninja-orca-projects-ctfd-android/232fc7fd-9b80-4de7-a59f-3fdef421cba6/scratchpad/fdroidserver-venv/bin/fdroid update",
+    "--pretty"
+  ],
+  "disabled": [],
+  "endTimestamp": 1793468607950,
+  "failedBuilds": {},
+  "fdroiddata": {
+    "commitId": "279588386256682d0f08fb18e526714db274f467",
+    "isDirty": false,
+    "modifiedFiles": [],
+    "untrackedFiles": [
+      ".gitignore",
+      "config/categories.yml",
+      "icon.png",
+      "metadata/io.github.bashninja.ctfd.yml",
+      "metadata/io.github.bashninja.ctfd/en-US/changelogs/1.txt",
+      "metadata/io.github.bashninja.ctfd/en-US/full_description.txt",
+      "metadata/io.github.bashninja.ctfd/en-US/images/icon.png",
+      "metadata/io.github.bashninja.ctfd/en-US/images/phoneScreenshots/1.png",
+      "metadata/io.github.bashninja.ctfd/en-US/images/phoneScreenshots/2.png",
+      "metadata/io.github.bashninja.ctfd/en-US/images/phoneScreenshots/3.png",
+      "metadata/io.github.bashninja.ctfd/en-US/short_description.txt",
+      "metadata/io.github.bashninja.ctfd/en-US/title.txt",
+      "repo/io.github.bashninja.ctfd_1.apk"
+    ]
+  },
+  "jarsigner": "/usr/lib/jvm/java-25-openjdk-amd64/bin/jarsigner",
+  "keytool": "/usr/lib/jvm/java-25-openjdk-amd64/bin/keytool",
+  "needsUpdate": [
+    "io.github.bashninja.ctfd"
+  ],
+  "noPackages": [
+    "io.github.bashninja.ctfd"
+  ],
+  "noUpdateCheck": [
+    "io.github.bashninja.ctfd"
+  ],
+  "stages": {
+    "delete_disabled_builds": 1793468600459,
+    "index.make repo": 1793468602674,
+    "prepare_apps repo": 1793468601244,
+    "process_apks": 1793468600459,
+    "read_added_date_from_all_apks": 1793468601244,
+    "remove_apks": 1793468601243,
+    "scan_repo_files": 1793468601242
+  },
+  "startTimestamp": 1793493800000,
+  "subcommand": "update"
+}
